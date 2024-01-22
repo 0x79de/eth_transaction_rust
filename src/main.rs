@@ -22,7 +22,7 @@ async fn main() -> Result<()> {
         first_address.encode_hex::<String>()
     );
 
-    // a provider is an Ethereum JsonRPC client
+    // a provider is an Ethereum JSON-RPC client
     let provider = Provider::try_from(ganache.endpoint())?.interval(Duration::from_millis(10));
 
     // query the balance of our account
